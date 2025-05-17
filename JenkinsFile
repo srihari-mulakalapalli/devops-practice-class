@@ -1,11 +1,7 @@
 pipeline {
   agent {
     docker {
-<<<<<<< HEAD
-      image 'srihari/maven-srihari-docker-agent:v9'
-=======
       image 'srihari/maven-srihari-docker-agent:v7'
->>>>>>> parent of c34b8cb (Revert "Now in git reset --hard it deleted last commit along with it Changes from that commit means changes in code are also removed from working directory")
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
